@@ -1,0 +1,8 @@
+Write diff hypervisor from scratch.
+Start from very basic:
+  1. emulating the execuatable (elf) itself.
+  2. Try implementing the userlevel threads (green threads) without any library support.
+  3. Play with struct ucontext; posix api also
+  4. Read the qemu history (v0.1.0) is very basic
+  5. We should be able to read the instructions (text) and maintain the memory (data & bss), stack, and register context state, and emulator will just change these state based on the intruction.
+
